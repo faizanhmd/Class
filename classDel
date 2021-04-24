@@ -1,0 +1,20 @@
+class employee:
+    def __init__(self, n, i,o):
+        self.name = n
+        self.id = i
+        self.occupation = o
+    def display(self):
+        print(f"Employee_Id: {self.id} \nEmployee_Name: {self.name}\nEmployee_profile: {self.occupation}")
+emp = employee("Faizan", "1001", "Analyst")
+emp.display()
+
+del emp.occupation
+try:
+    print(emp.occupation)
+except:
+    print("employee occupation not found")
+del emp
+try:
+    print(emp.name)
+except:
+    print("Employee not found")

@@ -1,0 +1,22 @@
+class Human:
+    def __init__(self, n, o):
+        self.name = n
+        self.occupation = o
+    def work(self):
+        if self.occupation == "actor":
+            print(self.name, "makes films")
+        elif self.occupation == "footballer":
+            print(self.name, "plays football")
+    def earns(self):
+        if self.occupation == "actor":
+            print(self.name, "earns thrice a year")
+        elif self.occupation == "footballer":
+            print(self.name, "earns every week")
+
+salman = Human("Salman Khan", "actor")
+salman.work()
+salman.earns()
+
+Messi = Human("Lionel Messi", "footballer")
+Messi.work()
+Messi.earns()
